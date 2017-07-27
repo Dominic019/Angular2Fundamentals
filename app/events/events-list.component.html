@@ -1,0 +1,14 @@
+<div>
+	<h1>Upcoming Angilar 2 Events</h1>
+	<hr/>
+	<div class="well">
+		Hello Wordl
+	</div>
+	<div class="row">
+		<div *ngFor="let event of events" class="col-md-5">
+			<events-thumbnail #thumbnail (click)="handleThumbanilClick(event.name)" [event]="event" (eventClick)="handleEventClicked($event)"></events-thumbnail>
+		</div>
+	</div>
+	<!--<h3>{{thumbnail.somePropertie}}</h3>-->
+	<!--<button class="btn btn-primary" (click)="thumbnail.logFoo()">Log me some foo</button>-->
+</div>
